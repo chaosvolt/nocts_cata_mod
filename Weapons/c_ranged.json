@@ -1537,5 +1537,43 @@
     ],
     "extend": { "flags": [ "FIRE_50", "FIRE_TWOHAND", "STR_RELOAD", "NON-FOULING" ] },
     "delete": { "flags": [ "FIRE_100" ] }
+  },
+  {
+    "id": "flamethrower_surv_mech",
+    "looks_like": "recon_mech_laser",
+    "type": "GUN",
+    "reload_noise_volume": 2,
+    "name": { "str": "integral flamethrower" },
+    "description": "This is a makeshift flamethrower integral to the survivor mech-suit, using its engine to provide a more intensely-pressurized stream of fuel.  Less efficient than its handheld form as a result, but more powerful.",
+    "weight": "12500 g",
+    "volume": "5500 ml",
+    "price": 20000,
+    "price_postapoc": 6000,
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "light_gray",
+    "skill": "launcher",
+    "range": 9,
+    "ranged_damage": { "damage_type": "stab", "amount": 5, "armor_penetration": 4 },
+    "dispersion": 350,
+    "durability": 7,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
+    "loudness": 1,
+    "ups_charges": 80,
+    "reload": 0,
+    "ammo_effects": [ "FLARE", "FLAME", "STREAM", "INCENDIARY", "NEVER_MISFIRES" ],
+    "flags": [
+      "NO_UNLOAD",
+      "NEVER_JAMS",
+      "MECH_WEAPON",
+      "NO_UNWIELD",
+      "NO_SALVAGE",
+      "NO_REPAIR",
+      "UNBREAKABLE_MELEE",
+      "NON-FOULING",
+      "NEEDS_NO_LUBE"
+    ]
   }
 ]

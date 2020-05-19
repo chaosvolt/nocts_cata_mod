@@ -223,5 +223,23 @@
     "reliability": 5,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE" ]
+  },
+  {
+    "id": "gasoline_mech_cell",
+    "type": "MAGAZINE",
+    "category": "spare_parts",
+    "name": { "str": "armored gasoline cell" },
+    "description": "This fuel tank has been armored with kevlar, designed specifically for fueling some insane contraption with gasoline.",
+    "weight": "10 kg",
+    "volume": "25 L",
+    "price_postapoc": 4000,
+    "material": [ "steel", "kevlar" ],
+    "symbol": "=",
+    "color": "red",
+    "ammo_type": [ "gasoline" ],
+    "capacity": 20000,
+    "looks_like": "jerrycan_big",
+    "flags": [ "NO_SALVAGE", "MECH_BAT", "LEAK_DAM" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "gasoline": 20000 }, "rigid": true, "watertight": true } ]
   }
 ]

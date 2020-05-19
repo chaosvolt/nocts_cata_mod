@@ -2130,5 +2130,82 @@
     "book_learn": [ [ "textbook_fabrication", 1 ], [ "recipe_surv", 1 ] ],
     "using": [ [ "c_metal_molding_standard", 1 ], [ "steel_standard", 12 ], [ "forging_standard", 48 ] ],
     "tools": [ [ [ "makeshift_crowbar", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "gasoline_mech_cell",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 4,
+    "time": "45 m",
+    "book_learn": [ [ "recipe_lab_elec", 5 ], [ "textbook_robots", 4 ] ],
+    "using": [ [ "welding_standard", 5 ], [ "steel_standard", 2 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "jerrycan_big", 1 ] ], [ [ "kevlar_plate", 15 ] ], [ [ "hose", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_surv_mechsuit",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "computer", 5 ], [ "mechanics", 4 ], [ "fabrication", 4 ] ],
+    "difficulty": 5,
+    "time": "6 h",
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "textbook_robots", 5 ] ],
+    "using": [ [ "welding_standard", 30 ], [ "soldering_standard", 15 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "SAW_M", "level": 2 }
+    ],
+    "tools": [ [ [ "laptop", -1 ] ], [ [ "id_military", -1 ] ] ],
+    "components": [
+      [ [ "frame", 4 ], [ "hdframe", 2 ] ],
+      [ [ "steel_plate", 8 ], [ "hard_plate", 8 ] ],
+      [ [ "reinforced_glass_sheet", 1 ] ],
+      [ [ "kevlar_plate", 40 ] ],
+      [ [ "chain", 4 ] ],
+      [ [ "pump_complex", 4 ] ],
+      [ [ "hose", 8 ] ],
+      [ [ "motor_oil", 8000 ], [ "lamp_oil", 8000 ] ],
+      [ [ "1cyl_combustion_large", 2 ], [ "i4_combustion", 1 ], [ "aero_engine_light", 1 ] ],
+      [ [ "alternator_car", 1 ] ],
+      [ [ "battery_car", 1 ], [ "battery_motorbike", 5 ], [ "small_storage_battery", 5 ] ],
+      [ [ "vehicle_controls", 1 ] ],
+      [ [ "cable", 60 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "ai_module", 1 ] ],
+      [ [ "gasoline_mech_cell", 1 ] ],
+      [ [ "flamethrower_surv", 1 ] ],
+      [ [ "blade", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_surv_mech",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "skills_required": [ [ "mechanics", 3 ], [ "fabrication", 3 ] ],
+    "time": "4 h",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 20 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "steel_lump", 20 ] ],
+      [ [ "frame", 3 ] ],
+      [ [ "steel_plate", 6 ] ],
+      [ [ "kevlar_plate", 30 ] ],
+      [ [ "chain", 3 ] ],
+      [ [ "pump_complex", 3 ] ],
+      [ [ "hose", 6 ] ],
+      [ [ "vehicle_controls", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "ai_module", 1 ] ],
+      [ [ "flamethrower_surv", 1 ] ],
+      [ [ "blade", 1 ] ]
+    ]
   }
 ]

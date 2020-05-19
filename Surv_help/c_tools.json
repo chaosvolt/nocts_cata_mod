@@ -927,5 +927,43 @@
     "use_action": [ "HAMMER", "CROWBAR" ],
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "BELT_CLIP", "FRAGILE_MELEE" ]
+  },
+  {
+    "id": "bot_surv_mechsuit",
+    "type": "TOOL",
+    "name": { "str": "inactive survivor mechsuit" },
+    "//": "Three things to note.  First, it requires its power source to count as a magazine, hence custom gasoline cell.  Second, no way to apply the pet effect, and the need for an ID card is hardcoded.  Third, when it spawns it has its designated battery with a random amount of charges, so it has to imply draining a massive amount of fuel.",
+    "description": "This imposing work of mad science is a roughly-humanoid mechanical exoskeleton, a jury-rigged assembly of armored limbs, internal combustion, and hydraulic-actuated joints to augment the user's movement.  Structurally closer to power armor than a true mech.  It's powered by a modified engine running off a custom-made detachable fuel tank, which can also be used to fuel an integral flamethrower.  While definitely post-apocalyptic in design, it isn't entirely handmade; its motor functions rely on an AI module salvaged from a pre-cataclysm robot, repurposed to promptly and safely respond to the user's input.  However, using pre-cataclysm programming means that it won't respond without the correct RFID override signal.  One deployed it requires a military ID card, exploiting backdoor programming left in the module.",
+    "weight": "400 kg",
+    "volume": "175 L",
+    "price_postapoc": 7500,
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel", "kevlar" ],
+    "symbol": ",",
+    "color": "cyan",
+    "flags": [ "ALLOW_REMOTE_USE" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_surv_mech",
+      "friendly_msg": "You tighten the final fuel and hydraulic hose connections and set the machine up.  Salvaged robotics boot up soon afterward, awaiting the use of an ID card to initialize its motor assistance.",
+      "moves": 1000
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_surv_mech",
+    "name": { "str": "broken survivor mechsuit" },
+    "description": "This is a broken mech of homemade origin, now little more than scrap.",
+    "weight": "200 kg",
+    "volume": "100 L",
+    "price": 1000,
+    "price_postapoc": 10,
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "superalloy" ],
+    "symbol": ";",
+    "color": "light_green",
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   }
 ]
