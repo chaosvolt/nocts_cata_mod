@@ -3,6 +3,7 @@
     "id": "laser_sniper",
     "type": "MIGRATION",
     "replace": "laser_rifle"
+    "//": "e"
   },
   {
     "id": "bolt_rifle_elec",
